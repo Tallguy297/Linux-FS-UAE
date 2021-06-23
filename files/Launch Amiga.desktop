@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Exec=fs-uae
-X-GNOME-Autostart-enabled=true
-NoDisplay=false
-Hidden=false
-Name[en_AU]=Launch Amiga
-Comment[en_AU]=Commodore Amiga Emulator
-X-GNOME-Autostart-Delay=0
