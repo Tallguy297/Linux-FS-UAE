@@ -1,0 +1,44 @@
+# FS-UAE configuration saved by FS-UAE Launcher
+# Last saved: 2021-06-24 09:00:31
+
+[fs-uae]
+amiga_model = A1200/020
+bsdsocket_library = 1
+chip_memory = 2048
+cpu = 68060
+fast_memory = 8192
+floppy_drive_count = 4
+floppy_drive_speed = 100
+floppy_image_0 = Extras3_1_4.adf
+floppy_image_1 = Fonts.adf
+floppy_image_2 = Install3_1_4.adf
+floppy_image_3 = Install3_1_4HD.adf
+floppy_image_4 = Locale.adf
+floppy_image_5 = ModulesA2000_3.1.4.adf
+floppy_image_6 = ModulesA500_3.1.4.adf
+floppy_image_7 = ModulesA600_3.1.4.adf
+floppy_image_8 = Storage3_1_4.adf
+floppy_image_9 = Workbench3_1_4.adf
+floppy_image_10 = RestoreArchiveDisc.adf
+floppy_image_11 = AmigaTestKit.adf
+floppy_image_12 = SysInfo44.adf
+force_aspect = 1.7777777777777777
+fullscreen mode = fullscreen
+fullscreen = 1
+hard_drive_0 = system.hdf
+hard_drive_0_controller = ide0
+hard_drive_0_priority = -40
+hard_drive_0_type = RDF
+hard_drive_1 = Work
+hard_drive_1_priority = -127
+hard_drive_1_label = PC Files
+kickstart_file = kick46143a500.rom
+network_card = a2065
+platform = amiga
+sound_card = toccata
+uae_floppy0type = 1
+uae_floppy1type = 1
+uae_floppy2type = 1
+uae_floppy3type = 1
+writable_floppy_images = 1
+zorro_iii_memory = 524288
