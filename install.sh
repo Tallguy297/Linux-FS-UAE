@@ -4,7 +4,7 @@ wmctrl -r :ACTIVE: -b add,fullscreen
 
 function run-in-user-session() {
     _display_id=":$(find /tmp/.X11-unix/* | sed 's#/tmp/.X11-unix/X##' | head -n 1)"
-    _username=$(who | grep "\(${_display_id}\)" | awk '{print $1}')
+    _username=$(who | grep "($_display_id)" | awk '{print $1}')
     _user_id=$(id -u "$_username")
     _environment=("DISPLAY=$_display_id" "DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/$_user_id/bus")
     sudo -Hu "$_username" env "${_environment[@]}" "$@"
@@ -21,7 +21,7 @@ run-in-user-session dconf write /org/nemo/desktop/volumes-visible "false"
 run-in-user-session dconf write /org/cinnamon/desktop/background/slideshow/delay 5
 run-in-user-session dconf write /org/cinnamon/desktop/background/slideshow/slideshow-enabled "true"
 run-in-user-session dconf write /org/cinnamon/desktop/background/slideshow/random-order "true"
-run-in-user-session dconf write /org/cinnamon/desktop/background/slideshow/image-source "'xml:///usr/share/cinnamon-background-properties/linuxmint-vera.xml'"
+run-in-user-session dconf write /org/cinnamon/desktop/background/slideshow/image-source "'xml:///usr/share/cinnamon-background-properties/linuxmint-victoria.xml'"
 #Screen Saver
 run-in-user-session dconf write /org/cinnamon/desktop/session/idle-delay "uint32 0"
 run-in-user-session dconf write /org/cinnamon/desktop/screensaver/lock-enabled "false"
