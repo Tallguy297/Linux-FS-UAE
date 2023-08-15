@@ -1,6 +1,4 @@
 #!/bin/bash
-reset
-wmctrl -r :ACTIVE: -b add,fullscreen
 
 currentuser=$(users | awk '{print $1}')
 
